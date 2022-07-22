@@ -19,6 +19,7 @@ body{
    gap: 5rem;
    max-width: 1600px;
    margin: auto;
+   overflow-x: hidden;
 }
 .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,footer{
     width: 100%;
@@ -388,9 +389,7 @@ footer img{
   /* nav{
     display: none;
   } */
-body{
-    overflow: hidden;
-}
+
   nav a{
     text-decoration: none;
     color: rgb(88, 79, 79);
@@ -427,13 +426,14 @@ nav{
     right: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 0 5px #cc183c;
+    box-shadow: 0 0 0 4px #cc183c;
     width: 60vw;
-    inset: 10 0 0 0;
+    inset: 0 0 0 30%;
     display: flex;
     justify-content: flex-end;
-    border: 1px solid black;
     padding-top: 2rem;
+    width: 295px;
+   transform: translateX(300px);
     /* display: none; */
 }
 nav ul{
