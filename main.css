@@ -328,8 +328,12 @@ article{
 .eleven div{
     display: flex;
     gap: .5rem;
+    border-top: 5px solid #cc183c;
+    /* border-left: 5px solid #cc183c; */
+    padding: 1rem;
     /* height: 15vw; */
 }
+
 .eleven div h1{
     width: 50%;
     padding: 1rem 0rem;
@@ -362,6 +366,13 @@ footer img{
     margin: 3px;
     width: 25px;
 }
+.close{
+    display: none;
+}
+.menu{
+    width: 40px;
+    display: none;
+}
 
 
 /* @media only screen and (max-width: 760px) {
@@ -374,15 +385,79 @@ footer img{
     } */
     
 @media only screen and (max-width: 420px){
-  nav{
+  /* nav{
     display: none;
-  }
+  } */
+body{
+    overflow: hidden;
+}
+  nav a{
+    text-decoration: none;
+    color: rgb(88, 79, 79);
+    font-size: 15px;
+}
+#logo{
+    width: 60px;
+    padding-top: 1rem;
+}
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    Padding-inline: 0rem;
+}
+.menu{
+    display: block;
+    position: absolute;
+    top: 1.8rem;
+    right: 1.3rem;
+}
+.close{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+.close img{
+    width: 30px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(214, 194, 194);
+    width: 60vw;
+    inset: 10 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid black;
+    padding-top: 2rem;
+    /* display: none; */
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+ nav li{
+    font-weight: 700;
+    margin: 6px;
+    border-bottom: none;
+    padding: 9px;
+    border-radius: 9px;
+    /* border: 1px solid #cc183c; */
+    margin-left: -1.5rem;
+}
+
   .one h2{
     font-size: 20px;
 }
 body{
     width: 100vw;
-    border: 1px solid #228b22;
     padding-inline: 1rem;
     box-sizing: border-box;
     gap: 1rem;
@@ -525,6 +600,9 @@ body{
 }
 .ten main>span{
     margin-bottom: -1rem;
+}
+.ten h4{
+    font-size: 16px;
 }
 .eleven header h1{
     font-size: 30px;
