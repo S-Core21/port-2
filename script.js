@@ -11,25 +11,22 @@ let menuStatus;
 
 
 menuOpen.addEventListener("click", () => {
-  navBar.style.cssText = "transform: translateX(0px); transition: 1s linear 0.3s";
-  menuStatus = true
-  
+  navBar.style.cssText = "transform: translateX(0px); transition: .6s linear 0s";
 });
 menuClose.addEventListener("click", () => {
   navBar.style.cssText =
-    "transform: translateX(300px); transition: all 3s linear 0.3s";
+    "transform: translateX(300px); transition: all .6s linear 0s";
 });
 
-menuclose2.addEventListener("mouseover", () => {
-    if(menuStatus===true){
-  navBar.style.cssText =
-    "transform: translateX(300px); transition: 1s linear 0.3s";
+// menuclose2.addEventListener("mouseover", () => {
+//     if(menuStatus===true){
+//   navBar.style.cssText =
+//     "transform: translateX(300px); transition: .6s linear 0s";
+// }
+// });
+for(let i=0; i < menuclose3.length; i++ ){
+menuclose3[i].addEventListener('click', ()=>{
+        navBar.style.cssText = 'transform: translateX(300px); transition: 0s linear 0s'   
+})
 }
-});
 
-// menuclose3.addEventListener('click', ()=>{
-//     for(let i=0; i < menuclose3.length; i++ ){
-//         navBar.style.cssText = 'transform: translateX(300px); transition: 1s linear 0.3s'
-//     }
-// })
-// console.log(menuclose3)
