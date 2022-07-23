@@ -420,6 +420,9 @@ footer img{
 .close img{
     width: 30px;
 }
+section{
+    overflow-x: hidden;
+}
 nav{
     position: absolute;
     top: 0;
@@ -427,13 +430,13 @@ nav{
     bottom: 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 0 4px #cc183c;
-    width: 60vw;
+    /* width: 60vw; */
     inset: 0 0 0 30%;
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
     width: 295px;
-   transform: translateX(300px);
+   transform: translateX(100vw);
     /* display: none; */
 }
 nav ul{
@@ -462,6 +465,8 @@ body{
     padding-inline: 1rem;
     box-sizing: border-box;
     gap: 1rem;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .one div img{
