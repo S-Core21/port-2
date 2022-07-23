@@ -10,10 +10,10 @@ let menuclose3 = document.querySelectorAll('#nav1,#nav2,#nav3,#nav4,#nav5,#nav6'
 // }
 
 menuOpen.addEventListener('click', ()=> {
-    navBar.style.cssText = 'transform: translateX(0px); transition: 1s linear 0.3s'
+    navBar.style.cssText = 'right: 0; transition: 1s linear 0.3s'
 })
 menuClose.addEventListener('click', ()=> {
-    navBar.style.cssText = 'transform: translateX(300px); transition: 1s linear 0.3s'
+    navBar.style.cssText = 'transform: translateX(300px); transition: all 3s linear 0.3s'
 })
 
 // menuclose2.addEventListener('click', ()=>{

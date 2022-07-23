@@ -6,6 +6,7 @@
 html{
     box-sizing: border-box;
     font-family:  'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 h1,h2,h3,li{
     font-family: 'Times New Roman', Times, serif
@@ -420,23 +421,21 @@ footer img{
 .close img{
     width: 30px;
 }
-section{
-    overflow-x: hidden;
-}
 nav{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -100%;
     bottom: 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 0 4px #cc183c;
     /* width: 60vw; */
-    inset: 0 0 0 30%;
+    /* inset: 0 0 0 40%; */
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
-    width: 295px;
-   transform: translateX(100vw);
+    width: 255px;
+    /* width: 295px;
+   transform: translateX(100vw); */
     /* display: none; */
 }
 nav ul{
@@ -465,7 +464,6 @@ body{
     padding-inline: 1rem;
     box-sizing: border-box;
     gap: 1rem;
-    overflow-x: hidden;
     position: relative;
 }
 
