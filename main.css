@@ -424,19 +424,19 @@ footer img{
 nav{
     position: absolute;
     top: 0;
-    right: -100%;
+    right: 0;
     bottom: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(156, 133, 133);
     box-shadow: 0 0 0 4px #cc183c;
     /* width: 60vw; */
     /* inset: 0 0 0 40%; */
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
-    width: 255px;
-    /* width: 295px;
-   transform: translateX(100vw); */
-    /* display: none; */
+    width: 220px;
+    
+   transform: translateX(300px);
+   
 }
 nav ul{
     display: flex;
