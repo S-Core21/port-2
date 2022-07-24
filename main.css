@@ -29,7 +29,7 @@ body{
 nav a{
     text-decoration: none;
     color: rgb(88, 79, 79);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .logo{
@@ -66,6 +66,10 @@ section{
     align-items: center;
     justify-content: space-between;
     Padding-inline: 3rem;
+    position: fixed;
+    width: 1260px;
+    background-color: white;
+    z-index: 10000;
 }
 nav ul{
     display: flex;
@@ -79,12 +83,16 @@ nav ul{
     padding: 5px;
     border-radius: 9px;
 }
+nav{
+    transform: initial;
+}
 article{
     display: flex;
 }
 .one{
     display: flex;
     align-items: center;
+    margin-top: 3rem;
 }
 .one-header{
     padding: 0rem;
@@ -121,7 +129,6 @@ article{
     gap: 5rem;
     margin: auto;
     font-size: 22px;
-    /* text-align: center; */
 }
 .three div,.four div{
     width: 33.33%;
@@ -130,8 +137,6 @@ article{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* width: 80%; */
-    /* margin: auto; */
     align-items: center;
 }
 .five-left h1{
@@ -331,9 +336,7 @@ article{
     display: flex;
     gap: .5rem;
     border-top: 5px solid #cc183c;
-    /* border-left: 5px solid #cc183c; */
     padding: 1rem;
-    /* height: 15vw; */
 }
 
 .eleven div h1{
@@ -387,10 +390,6 @@ footer img{
     } */
     
 @media only screen and (max-width: 420px){
-  /* nav{
-    display: none;
-  } */
-
   nav a{
     text-decoration: none;
     color: rgb(88, 79, 79);
@@ -399,12 +398,19 @@ footer img{
 #logo{
     width: 60px;
     padding-top: 1rem;
+    margin-left: 1rem;
 }
   section{
     display: flex;
     align-items: center;
     justify-content: space-between;
     Padding-inline: 0rem;
+    position: fixed;
+    width:100%;
+    margin-left: -1rem;
+    background-color: white;
+    z-index: 9999;
+    box-shadow: 0 3px 4px 0 rgb(187, 165, 165);
 }
 .menu{
     display: block;
@@ -426,15 +432,14 @@ nav{
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(156, 133, 133);
-    box-shadow: 0 0 0 4px #cc183c;
-    /* width: 60vw; */
-    /* inset: 0 0 0 40%; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 20px 0px #cc183c;
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
-    width: 220px;
+    width: 250px;
    transform: translateX(300px);
+   height: 100vh;
    
 }
 nav ul{
@@ -451,8 +456,12 @@ nav ul{
     border-bottom: none;
     padding: 9px;
     border-radius: 9px;
+    font-size: 35px;
     /* border: 1px solid #cc183c; */
     margin-left: -1.5rem;
+}
+nav a{
+    font-size: 22px;
 }
 
   .one h2{
@@ -478,6 +487,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 90vw;
+    margin-top: 4rem;
 }
 .one-header{
     padding: 0rem;
