@@ -15,9 +15,9 @@ let home = document.querySelector('.one')
 menuOpen.addEventListener("click", () => {
   
   if(!querry.matches){
-  navBar.style.cssText = "transform: translateX(0px); transition: all .3s linear .2s"
-}else if (querry.matches){
   navBar.style.cssText = "transform: translateX(0px)"
+}else if (querry.matches){
+  navBar.style.cssText = "transform: translateX(0px); transition: all .5s linear 0s"
 }
 })
 
