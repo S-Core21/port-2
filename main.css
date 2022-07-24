@@ -410,7 +410,6 @@ footer img{
     margin-left: -1rem;
     background-color: white;
     z-index: 9999;
-    box-shadow: 0 3px 4px 0 rgb(187, 165, 165);
 }
 .menu{
     display: block;
@@ -440,7 +439,6 @@ nav{
     width: 250px;
    transform: translateX(300px);
    height: 100vh;
-   
 }
 nav ul{
     display: flex;
