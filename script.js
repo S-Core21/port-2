@@ -2,7 +2,7 @@ let menuClose = document.querySelector(".close");
 let menuOpen = document.querySelector(".menu");
 let navBar = document.querySelector("nav");
 let menuclose2 = document.querySelectorAll('article,footer');
-let querry = window.matchMedia("(max-width: 420px)");
+let querry = window.matchMedia("(max-width: 627px)");
 let navSection = document.querySelector('section');
 let menuclose3 = document.querySelectorAll(
   "#nav1,#nav2,#nav3,#nav4,#nav5,#nav6"

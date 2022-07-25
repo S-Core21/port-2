@@ -389,7 +389,7 @@ footer img{
     }
     } */
     
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 627px){
   nav a{
     text-decoration: none;
     color: rgb(88, 79, 79);
