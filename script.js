@@ -11,6 +11,9 @@ let home = document.querySelector('.one')
 
 
 
+if(querry.matches){
+  document.body.style.cssText = 'overflow-x:hidden' 
+}
 
 menuOpen.addEventListener("click", () => {
   
@@ -44,7 +47,7 @@ for(let i=0; i < menuclose2.length; i++ ){
     navSection.style.cssText = 'box-shadow: 0 20px 10px 0 gainsboro;'
 })}else if(!querry.matches){
   menuclose2[i].addEventListener('mouseover', ()=>{
-    navSection.style.cssText = 'box-shadow: 0 20px 10px 0 gainsboro;'})
+    navSection.style.cssText = 'box-shadow: none;'})
 }
 menuclose2[i].addEventListener('click', ()=>{
   if(querry.matches){
@@ -61,7 +64,7 @@ if(querry.matches){
 
 if(!querry.matches){
 home.addEventListener('mouseover', ()=>{
-  navSection.style.cssText = 'box-shadow: 0 0px 0 0 gainsboro;'
+  navSection.style.cssText = 'none;'
 })
 }else if(querry.matches){
   home.addEventListener('touchmove', ()=>{

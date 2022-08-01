@@ -6,10 +6,10 @@
 html{
     box-sizing: border-box;
     font-family:  'Nunito', sans-serif;
-    overflow-x: hidden;
+    
 }
 h1,h2,h3,li{
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -20,23 +20,24 @@ body{
    gap: 5rem;
    max-width: 1600px;
    margin: auto;
-   overflow-x: hidden;
+   position: relative;
 }
-.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,footer{
+/* .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,footer{
     width: 100%;
     margin: auto;
-}
+} */
 nav a{
     text-decoration: none;
     color: rgb(88, 79, 79);
     font-size: 20px;
 }
-
-.logo{
-    width: 22px;
-}
 #logo{
-    width: 80px;
+    width: 420px;
+    margin: -6rem 0rem;
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  
 }
 .one{
     display: flex;
@@ -52,7 +53,7 @@ nav a{
     margin-right: -3px;
 }
 .one h2{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .one div img{
@@ -61,13 +62,18 @@ nav a{
     margin-left: 10px;
     margin-top: 5rem;
 }
+/* #on{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
 section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    Padding-inline: 3rem;
-    position: fixed;
-    width: 1260px;
+    /* Padding-inline: 3rem; */
+    /* position: fixed; */
+   /* width: 1600px; */
     background-color: white;
     z-index: 10000;
 }
@@ -79,9 +85,12 @@ nav ul{
  nav li{
     font-weight: 400;
     margin: 6px;
-    border-bottom: 5px solid #cc183c;
+    /* border-bottom: 5px solid #cc183c; */
     padding: 5px;
     border-radius: 9px;
+}
+nav li:hover{
+    font-weight: 900;
 }
 nav{
     transform: initial;
@@ -99,10 +108,10 @@ article{
     width: 50%;
 }
 .one h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .one p{
-    font-size: 25px;
+    font-size: 26px;
     width: 80%;
 }
 .one img{
@@ -114,49 +123,73 @@ article{
 .one main img{
     width: 98%;
 }
+.know_me,.eZ,.Aca{
+    margin: 0%;
+    height: 5px;
+    background-color: #0145fe;
+}
+.know_me{
+    width: 50px;
+    margin-bottom: -1.3rem;
+}
 .two{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    padding: 1rem;
 }
 .two h4{
     margin: auto;
-    font-size: 45px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: -3rem;
 }
 .three, .four{
     display: flex;
     gap: 5rem;
     margin: auto;
-    font-size: 22px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 27px;
 }
 .three div,.four div{
     width: 33.33%;
+}
+.vid{
+    width: 100%;
 }
 .five{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
+    margin-top: 3rem;
+    /* align-items: center; */
 }
 .five-left h1{
-    font-size: 40px;
-    padding-left: 10px;
-    border-left: 5px solid #cc183c;
+    font-size: 30px;
+    font-weight: 600;
 }
 .five-right{
-    font-size: 28px;
+    font-size: 20px;
+}
+.five-right h2{
+    font-size: 30px;
+}
+.eZ{
+    width: 60px;
+    margin-bottom: -1.5rem;
 }
 .six{
     display: flex;
     flex-direction: column;
-    gap: -3rem;
    align-items: center;
    justify-content: center;
    margin: auto;
    overflow: hidden;
 }
 .six>div{
+    margin: -7rem 0rem;
     display: flex;
     align-items: center;
     animation: brand 10s linear 0s infinite ;
@@ -183,25 +216,26 @@ article{
     margin-bottom: 0rem;
 }
 .six h1{
-    font-size: 60px;
+    font-size: 40px;
 }
 .six img{
-    width: 150px;
+    width: 90px;
     margin-right: 2rem;
 }
 #com{
-    font-size: 50px;
-    margin: auto;
-    padding-top: 2rem;
-    transform: translateY(3rem);
+    font-size: 35px;
+}
+.Aca{
+    width: 90px;
+    margin-top: 6rem;
 }
 .three h2, .four h2{
     padding-left: 8px;
-    border-left: 5px solid #cc183c;
+    font-size: 22px;
+    text-align: center;
 }
 #com{
-    padding-bottom: .5rem;
-    border-bottom: 5px solid #cc183c;
+    margin: 0;
 }
 .seven{
     display: flex;
@@ -211,29 +245,35 @@ article{
 }
 .seven-left{
     width: 50%;
-    background-color: rgb(222, 233, 229);
+    /* background-color: rgb(222, 233, 229); */
+    box-shadow: 10px 10px 10px 10px rgb(222, 233, 229);
 }
 .seven-left img{
     width: 100%;
 }
 .seven-right{
-    font-size: 30px;
     width: 50%;
 }
+.seven-right h1{
+    font-size: 35px;
+}
 .seven-right img{
-    width: 40px;
+    width: 20px;
 }
 .seven-right p{
     width: 100%;
+    font-size: 20px;
+    line-height: 35px;
 }
 #web{
-    margin-bottom: -13px;
+    width: 30px;
+    margin-bottom: -8px;
     margin-left: 3px;
 }
 .seven-right button, .nine button{
-    font-size: 20px;
-    padding: 10px;
-    background-color: #cc183c;
+    font-size: 18px;
+    padding: 7px;
+    background-color: #0145fe;
     color: white;
     font-weight: bolder;
     border: none;
@@ -270,10 +310,8 @@ article{
     font-size: 35px;
 }
 .nine header h1{
+    font-size: 30px;
     padding-bottom: 0.5rem;
-}
- #com{
-    border-bottom: 5px solid #cc183c;
 }
 .nine main{
     display: flex;
@@ -300,48 +338,48 @@ article{
 .ten{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    /* border: 1px solid; */
+}
+.ten header{
+    font-size: 25px;
 }
 .ten main{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    gap: 2rem;
 }
-.ten >span{
+.ten main div{
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    font-size: 30px;
-    gap: 1rem;
-    width: 33.3%;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px #dbdbfa;
+    width: 33.33%;
 }
-.ten span img{
-    margin-inline: 5px;
-    transform: translateY(7px);
-}
-.ten> span >span{
-    color: #228b22;
-    font-weight: bolder;
-    padding-left: 4px;
-}
-.ten h4{
-    font-size: 22px;
+.ten p{
+    font-size: 18px;
+    text-align: center;
 }
 .eleven{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
+.eleven header{
+    font-size: 25px;
+}
 .eleven div{
     display: flex;
-    gap: .5rem;
-    border-top: 5px solid #cc183c;
-    padding: 1rem;
+    gap: 1rem;
+   
+    padding: 3px;
+    border-bottom: 1px solid;
 }
 
-.eleven div h1{
-    width: 50%;
-    padding: 1rem 0rem;
+.eleven div p{
+    width: 70%;
+    padding: 0rem 0rem;
+    font-size: 21px;
+    line-height: 30px;
 }
 .exp{
     width: 100%;
@@ -350,11 +388,11 @@ article{
     border: none;
 }
 .exp-img{
-    width: 50%;
+    width: 30%;
 }
 .eleven img{
-    width: 50%;
-    height: 400px;
+    width: 200px;
+    height: 100px;
 }
 
 footer{
@@ -380,7 +418,7 @@ footer img{
 }
 
 
-/* @media only screen and (max-width: 760px) {
+/* @media (min-width: 628px) and (min-width: 1024px;) {
     header{
       
     }
@@ -396,9 +434,11 @@ footer img{
     font-size: 15px;
 }
 #logo{
-    width: 60px;
     padding-top: 1rem;
-    margin-left: 1rem;
+    position: absolute;
+    width: 320px;
+    margin: -5rem 0rem;
+    left: -2.5rem;
 }
   section{
     display: flex;
@@ -408,8 +448,9 @@ footer img{
     position: fixed;
     width:100%;
     margin-left: -1rem;
-    background-color: white;
     z-index: 9999;
+    /* box-shadow: 0 0 10px 10px #dbdbfa; */
+    height: 12vh;
 }
 .menu{
     display: block;
@@ -432,7 +473,7 @@ nav{
     right: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0px 20px 0px #cc183c;
+    box-shadow: 0 0px 20px 0px #0145fe;
     display: flex;
     justify-content: flex-end;
     padding-top: 2rem;
@@ -469,22 +510,15 @@ body{
     width: 100vw;
     padding-inline: 1rem;
     box-sizing: border-box;
-    gap: 1rem;
+    gap: 5rem;
     position: relative;
     justify-content: center;
-}
-
-.one div img{
-    width: 13px;
-    margin-bottom: -2px;
-    margin-left: 3px;
-    margin-top: 0rem;
 }
 .one{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 100%;
     margin-top: 4rem;
 }
 .one-header{
@@ -505,7 +539,7 @@ body{
     width: 100%;
 }
 .one main img{
-    width: 98%;
+    width: 100%;
 }
 #nickname{
     font-size: 25px;
@@ -514,7 +548,14 @@ body{
     width: 22px;
 }
 #vid{
+    width: 100%;
     height: 300px;
+}
+.vid{
+  width: 100%;
+}
+.five{
+    width: 100%;
 }
 .five-left h1{
     font-size: 30px;
@@ -524,21 +565,27 @@ body{
 }
 .five-right p{
     font-size: 16px;
+    line-height: 26px;
 }
 .two{
-    padding: 0;
-}
-.two h4{
-    font-size: 30px;
+    margin-bottom: 1rem;
 }
 .three, .four{
     flex-direction: column;
     gap: 0;
+    width: 100%;
+    margin: 0;
 }
 .three h2, .four h2{
     font-size: 20px;
 }
 .three div, .four div{
+    width: 100%;
+}
+.three p, .four p{
+    line-height: 26px;
+}
+.six{
     width: 100%;
 }
 .six h1{
@@ -588,6 +635,7 @@ body{
 }
 .seven-left{
     width: 100%;
+    box-shadow: 0px 2px 0px 5px rgb(222, 233, 229);
 }
 .seven-right{
     width: 100%;
@@ -595,27 +643,32 @@ body{
 .seven-right h1{
     font-size: 30px;
     text-align: center;
-    width: 90%;
-    border-bottom: 2px solid #cc183c;
+    width: 70%;
+    border-bottom: 2px solid #0145fe;
 }
 .seven-right p{
     font-size: 16px;
 }
 .seven-right img{
-    width: 25px;
+    width: 20px;
+    margin-right: .4rem;
 }
 .seven-right button{
     font-size: 16px;
     padding: 5px;
 }
 #web{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    width: 22px;
 }
 .ten header h1{
     font-size: 30px;
 }
 .ten main{
     flex-direction: column;
+}
+.ten main div{
+    width: 100%;
 }
 .ten main>span{
     margin-bottom: -1rem;
@@ -626,12 +679,16 @@ body{
 .eleven header h1{
     font-size: 30px;
 }
-.eleven main h1{
+.eleven main p{
     font-size: 13px;
     padding: 0;
+    line-height: 25px;
 }
 .eleven main img{
     height: 150px;
+}
+.nine{
+    width: 100%;
 }
 .nine main{
     flex-direction: column;
