@@ -44,7 +44,7 @@ menuclose3[i].addEventListener('click', ()=>{
 for(let i=0; i < menuclose2.length; i++ ){
   if(querry.matches){
   menuclose2[i].addEventListener('touchmove', ()=>{
-    navSection.style.cssText = 'box-shadow: 0 20px 10px 0 gainsboro;'
+    navSection.style.cssText = 'box-shadow: 0 2px 2px 0 gainsboro;'
 })}else if(!querry.matches){
   menuclose2[i].addEventListener('mouseover', ()=>{
     navSection.style.cssText = 'box-shadow: none;'})
