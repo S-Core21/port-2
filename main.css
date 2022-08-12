@@ -21,7 +21,6 @@ body{
    max-width: 1600px;
    margin: auto;
    position: relative;
-   transition: 2s linear infinite;
 }
 /* .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,footer{
     width: 100%;
