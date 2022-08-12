@@ -21,6 +21,7 @@ body{
    max-width: 1600px;
    margin: auto;
    position: relative;
+   transition: 2s linear infinite;
 }
 /* .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,footer{
     width: 100%;
@@ -86,11 +87,14 @@ nav ul{
     font-weight: 400;
     margin: 6px;
     /* border-bottom: 5px solid #cc183c; */
-    padding: 5px;
+    padding: 10px;
     border-radius: 9px;
 }
 nav li:hover{
     font-weight: 900;
+    font-size: 25px;
+    transition: .3s ease-in-out;
+    border-bottom: 5px solid #0145fe;
 }
 nav{
     transform: initial;
@@ -155,6 +159,12 @@ article{
 }
 .three div,.four div{
     width: 33.33%;
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: 0px 1px 0px 1px #8b9fd8;
+}
+.serviceImg{
+    width: 50px;
 }
 .vid{
     width: 100%;
@@ -235,18 +245,23 @@ article{
     text-align: center;
 }
 #com{
-    margin: 0;
+    margin-right: auto;
 }
 .seven{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     /* width: 80%; */
    align-items: center;
 }
+.seven main{
+    display: flex;
+    gap: 2rem;
+}
 .seven-left{
     width: 50%;
     /* background-color: rgb(222, 233, 229); */
-    box-shadow: 10px 10px 10px 10px rgb(222, 233, 229);
+    box-shadow: 1px 1px 10px 1px rgb(222, 233, 229);
 }
 .seven-left img{
     width: 100%;
@@ -352,29 +367,49 @@ article{
     display: flex;
     flex-direction: column;
     /* border: 1px solid; */
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px 5px #dbdbfa;
+  
     width: 33.33%;
 }
 .ten p{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px #dbdbfa;
     font-size: 18px;
     text-align: center;
+    padding: 9px;
 }
 .eleven{
     display: flex;
     flex-direction: column;
-    margin: 0;
+    width: 100%;
+    align-items: center;
 }
 .eleven header{
     font-size: 25px;
 }
-.eleven div{
-    display: flex;
-    gap: 1rem;
-   
-    padding: 3px;
-    border-bottom: 1px solid;
+
+table{
+    width: 100%;
 }
+tr{
+    width: 100%;
+}
+td{
+    text-align: center;
+}
+td img{
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+}
+#ex_rg img{
+    height: 500px;
+    width: 900px;
+}
+#ex_rg{
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
 
 .eleven div p{
     width: 70%;
@@ -390,10 +425,6 @@ article{
 }
 .exp-img{
     width: 30%;
-}
-.eleven img{
-    width: 200px;
-    height: 100px;
 }
 
 footer{
@@ -586,23 +617,24 @@ body{
 .three h2, .four h2{
     font-size: 20px;
     margin: 0;
-    text-align: left;
     padding: 0;
-    margin-bottom: -.9rem;
+    margin-bottom: -.1rem;
 }
 .three div, .four div{
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 .three p, .four p{
-    line-height: 26px;
-    font-size: 16px;
+    line-height: 20px;
+    font-size: 14px;
 }
 .four{
     transform: translateY(-4rem);
 }
 .six{
     width: 100%;
+    margin-bottom: 0rem;
 }
 .six h1{
     font-size: 30px;
@@ -644,6 +676,10 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: left;
+    margin-top: -15rem;
+}
+.seven main{
+    flex-direction: column;
 }
 #bUNN{
     margin-left: -2rem;
@@ -698,6 +734,9 @@ body{
 .nine a{
     font-family: cursive;
     font-weight: 100;
+}
+.eleven{
+    display: none;
 }
 .eleven header h1{
     font-size: 30px;
